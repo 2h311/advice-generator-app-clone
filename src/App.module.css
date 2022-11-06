@@ -1,0 +1,19 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.AdviceContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 92%;
+}
+
+/*# sourceMappingURL=App.module.css.map */
