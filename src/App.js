@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 
+import { Spinner } from "./components/Spinner";
 import classes from "./App.module.css";
 import mobileDivider from "./images/pattern-divider-mobile.svg";
 import desktopDivider from "./images/pattern-divider-desktop.svg";
@@ -35,7 +36,7 @@ function App() {
       <main className={classes.Main}>
         <div className={classes.AdviceContainer}>
           {isLoading ? (
-            <p className={classes.Advice}>Loading ...</p>
+            <Spinner />
           ) : (
             <Fragment>
               <p className={classes.AdviceSerialNo}>Advice #{id}</p>
@@ -59,7 +60,7 @@ function App() {
           ></button>
         </div>
         <footer className={classes.Attribution}>
-          Challenge by
+          Challenge by&nbsp;
           <a
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank"
@@ -67,10 +68,12 @@ function App() {
           >
             <strong>Frontend Mentor</strong>
           </a>
-          . Made with by &#129505;
+          . Made with by &#129505;&nbsp;
           <a rel="noreferrer" target="_blank" href="https://github.com">
             <strong>Askash Verma</strong>
-          </a>
+          </a>{" "}
+          <br />
+          <span>Cloned with &#128149;</span>
         </footer>
       </main>
     </Fragment>
