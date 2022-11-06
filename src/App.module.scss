@@ -9,7 +9,7 @@
 }
 
 .Advice {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 800;
     color: hsl(193, 38%, 86%);
     line-height: 3.6rem;
@@ -29,8 +29,9 @@
     }
 
     &SerialNo {
+        font-size: 1.6rem;
         text-transform: uppercase;
-        font-size: 1.1rem;
+        font-weight: 400;
         letter-spacing: 0.32rem;
         color: hsl(150, 100%, 66%);
     }
