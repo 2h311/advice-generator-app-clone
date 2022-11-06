@@ -8,12 +8,92 @@
   overflow-x: hidden;
 }
 
+.Advice {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: hsl(193deg, 38%, 86%);
+  line-height: 3.6rem;
+}
 .AdviceContainer {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   width: 92%;
+  padding: 4rem 2.4rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 1rem;
+  margin: auto;
+}
+.AdviceSerialNo {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.32rem;
+  color: hsl(150deg, 100%, 66%);
+}
+
+.TabViewDivider {
+  display: none;
+}
+
+.mobileViewDivider {
+  display: block;
+}
+
+.Button {
+  position: absolute;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  background: hsl(150deg, 100%, 66%) url("./images/icon-dice.svg") no-repeat center;
+  border: none;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.Button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px 5px hsl(150deg, 100%, 66%);
+}
+
+.Attribution {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.Attribution a {
+  color: hsl(150deg, 100%, 66%);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 700px) {
+  .Advice {
+    font-size: 2.75rem;
+    line-height: 3.825rem;
+  }
+  .AdviceContainer {
+    max-width: 54.4rem;
+    padding: 5rem 5rem;
+    padding-bottom: 7rem;
+    border-radius: 1.4rem;
+    gap: 2.2rem;
+  }
+  .AdviceSerialNo {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.38rem;
+  }
+  .mobileViewDivider {
+    display: none;
+  }
+  .TabViewDivider {
+    display: block;
+    margin-top: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=App.module.css.map */

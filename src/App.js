@@ -14,7 +14,6 @@ function App() {
       "It is easy to sit up and take notice, without a bread you cannot jogbonlo.",
   });
   const { id, advice } = currentAdvice;
-  // console.log(id, advice);
 
   async function getAdvice() {
     const response = await fetch("https://api.adviceslip.com/advice");
